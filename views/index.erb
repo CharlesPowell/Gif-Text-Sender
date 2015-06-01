@@ -1,0 +1,22 @@
+<!Doctype HTML>
+
+<html>
+  <head>
+    <title>Nokogiri Nexmo Combo</title>
+    <script src='/scripts/lib/jquery.js'></script>
+    <script src='/scripts/lib/underscore.js'></script>
+    <script src='/scripts/lib/backbone.js'></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+  </head>
+  <body>
+
+    <form action='/gif' method="post">
+      <input type="text" name="query" placeholder= "gif name...">
+      <input type="text" name="number" placeholder= "number...">
+      <input type="submit" value="Find">
+    </form>
+
+
+    <img src="<%= @query %>"/>
+  </body>
+</html>
